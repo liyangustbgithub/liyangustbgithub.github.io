@@ -5,57 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yang Li | Academic Homepage</title>
   <meta name="description" content="Yang Li - Associate Professor at USTB. Research in Evolutionary Computation, High-Performance Computing, and Physics-Informed Neural Networks." />
-  <style>
-    :root{
-      --bg:#0b0f19; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
-      --link:#60a5fa; --line:#1f2937; --accent:#34d399; --max: 980px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
-      background:linear-gradient(180deg,#070a12, #0b0f19 35%, #070a12); color:var(--text); }
-    a{color:var(--link); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max); margin:0 auto; padding:24px 18px 60px;}
-    header{display:flex; gap:18px; align-items:center; padding:18px; border:1px solid var(--line);
-      background:rgba(17,24,39,.65); border-radius:16px; backdrop-filter: blur(6px);}
-    .avatar{width:84px; height:84px; border-radius:14px; background:#0f172a; border:1px solid var(--line);
-      display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--muted);}
-    .title h1{margin:0; font-size:28px; letter-spacing:.2px}
-    .title p{margin:6px 0 0; color:var(--muted); line-height:1.35}
-    nav{margin:18px 0 0; display:flex; flex-wrap:wrap; gap:10px}
-    .pill{display:inline-flex; padding:8px 12px; border-radius:999px; border:1px solid var(--line);
-      background:rgba(17,24,39,.45); color:var(--text); font-size:14px}
-    .pill:hover{border-color:#334155; text-decoration:none}
-    .grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; margin-top:16px}
-    @media (max-width: 860px){ .grid{grid-template-columns:1fr} }
-    section{border:1px solid var(--line); background:rgba(17,24,39,.45); border-radius:16px; padding:18px}
-    h2{margin:0 0 10px; font-size:18px}
-    .muted{color:var(--muted)}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0; line-height:1.45}
-    .kvs{display:grid; grid-template-columns: 120px 1fr; gap:8px 10px; margin-top:10px}
-    .k{color:var(--muted)}
-    .tag{display:inline-block; padding:4px 8px; margin:6px 6px 0 0; border-radius:999px;
-      border:1px solid var(--line); color:var(--muted); font-size:12px}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px;
-      border:1px solid var(--line); background:rgba(17,24,39,.6); color:var(--text); font-size:14px}
-    .btn:hover{text-decoration:none; border-color:#334155}
-    .hr{height:1px; background:var(--line); margin:14px 0}
-    footer{margin-top:22px; color:var(--muted); font-size:13px}
-    .badge{color:var(--accent); font-weight:600}
-    .pub{margin:10px 0; padding:10px 12px; border:1px solid var(--line); border-radius:14px; background:rgba(2,6,23,.25)}
-    .pub-title{font-weight:650}
-    .pub-meta{color:var(--muted); margin-top:4px; font-size:14px; line-height:1.4}
-    .small{font-size:13px}
-    code{color:#cbd5e1}
-    .note{border-left:3px solid var(--accent); padding-left:10px}
-  </style>
+ wordpress是什么，是否有很常用的网站制作模版？
 </head>
 
 <body>
   <div class="wrap">
     <header>
-     <img src="Yangl.png" alt="Yang Li" style="width:84px;height:84px;border-radius:14px;object-fit:cover;border:1px solid #1f2937;">
+     <img class="avatar-img" src="Yangl.png" alt="Yang Li">
       <div class="title">
         <h1>Yang Li</h1>
         <p>
@@ -88,7 +44,7 @@
     </nav>
 
     <div class="grid" id="home">
-      <section>
+      <section class="card">
         <h2>About</h2>
         <p class="muted">
           My research aims to make scientific and engineering computation <span class="badge">faster</span>,
